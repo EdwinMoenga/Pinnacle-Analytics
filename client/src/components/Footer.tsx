@@ -60,13 +60,12 @@ export function Footer() {
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
                 <span>
-                  100 Innovation Drive,<br />
-                  Tech Valley, CA 94025
+                  Kisii - Kenya
                 </span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a href="tel:+15550123456">+1 (555) 012-3456</a>
+                <a href="tel:+254717738019">+254 717 738019</a>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
