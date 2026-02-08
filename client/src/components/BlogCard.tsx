@@ -18,9 +18,9 @@ export function BlogCard({ post, index }: BlogCardProps) {
       viewport={{ once: true }}
     >
       <Link href={`/blog/${post.slug}`}>
-        <Card className="bg-card border-white/5 overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 cursor-pointer h-full flex flex-col group">
+        <Card className="bg-white border border-slate-200 overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 cursor-pointer h-full flex flex-col group">
           <div className="relative h-48 overflow-hidden">
-            <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity" />
             <img 
               src={post.imageUrl} 
               alt={post.title} 
@@ -31,16 +31,16 @@ export function BlogCard({ post, index }: BlogCardProps) {
             <div className="flex items-center gap-2 text-xs text-primary font-medium uppercase tracking-wider">
               <span>{post.date}</span>
             </div>
-            <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors line-clamp-2">
+            <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors line-clamp-2">
               {post.title}
             </h3>
           </CardHeader>
           <CardContent className="flex-grow">
-            <p className="text-muted-foreground text-sm line-clamp-3">
+            <p className="text-slate-600 text-sm line-clamp-3">
               {post.excerpt}
             </p>
           </CardContent>
-          <CardFooter className="pt-0 flex items-center justify-between text-sm text-muted-foreground border-t border-white/5 mt-auto p-6">
+          <CardFooter className="pt-0 flex items-center justify-between text-sm text-slate-500 border-t border-slate-100 mt-auto p-6">
             <div className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
               {post.readTime}
