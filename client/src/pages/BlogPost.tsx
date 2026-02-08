@@ -45,17 +45,17 @@ export default function BlogPost() {
       <main className="flex-grow pt-32 pb-20">
         <article className="container mx-auto px-4 md:px-6 max-w-4xl">
           <Link href="/blog">
-            <Button variant="ghost" className="text-muted-foreground hover:text-white mb-8 pl-0 hover:bg-transparent">
+            <Button variant="ghost" className="text-slate-500 hover:text-slate-900 mb-8 pl-0 hover:bg-transparent">
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Blog
             </Button>
           </Link>
 
           <header className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
               {post.title}
             </h1>
             
-            <div className="flex flex-wrap items-center gap-6 text-muted-foreground border-b border-white/10 pb-8">
+            <div className="flex flex-wrap items-center gap-6 text-slate-500 border-b border-slate-200 pb-8">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
                 <span>{post.date}</span>
@@ -64,22 +64,22 @@ export default function BlogPost() {
                 <Clock className="w-4 h-4" />
                 <span>{post.readTime}</span>
               </div>
-              <Button variant="ghost" size="sm" className="ml-auto text-primary hover:text-primary hover:bg-primary/10">
+              <Button variant="ghost" size="sm" className="ml-auto text-primary hover:text-primary hover:bg-primary/5">
                 <Share2 className="w-4 h-4 mr-2" /> Share
               </Button>
             </div>
           </header>
 
-          <div className="relative aspect-video rounded-2xl overflow-hidden mb-12 shadow-2xl border border-white/10">
+          <div className="relative aspect-video rounded-2xl overflow-hidden mb-12 shadow-2xl border border-slate-200">
             <img 
               src={post.imageUrl} 
               alt={post.title} 
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           </div>
 
-          <div className="prose prose-invert prose-lg max-w-none prose-headings:font-heading prose-headings:text-white prose-a:text-primary prose-strong:text-white prose-blockquote:border-l-primary prose-blockquote:bg-white/5 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg">
+          <div className="prose prose-slate prose-lg max-w-none prose-headings:font-heading prose-headings:text-slate-900 prose-a:text-primary prose-strong:text-slate-900 prose-blockquote:border-l-primary prose-blockquote:bg-slate-50 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg">
             {/* 
               In a real app, you would parse markdown here. 
               For now, we'll just render text with newlines 
@@ -89,9 +89,9 @@ export default function BlogPost() {
             ))}
           </div>
 
-          <div className="mt-16 pt-12 border-t border-white/10 flex flex-col items-center text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Want to learn more?</h3>
-            <p className="text-muted-foreground mb-8 max-w-xl">
+          <div className="mt-16 pt-12 border-t border-slate-200 flex flex-col items-center text-center">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">Want to learn more?</h3>
+            <p className="text-slate-600 mb-8 max-w-xl">
               Our team of experts can help you apply these insights to your specific business challenges.
             </p>
             <Link href="/book-demo">

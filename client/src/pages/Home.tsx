@@ -48,7 +48,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0F172A]">
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-3xl rounded-full -translate-y-1/2 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-1/3 h-full bg-blue-600/5 blur-3xl rounded-full translate-y-1/2 -translate-x-1/4" />
@@ -66,7 +66,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
                 Unlock <span className="text-gradient">Data Insights</span> That Drive Growth
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
+              <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                 We transform complex data into clear, actionable strategies. Empower your business with enterprise-grade analytics and engineering.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -86,14 +86,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Expertise Grid Section */}
-      <section id="expertise" className="py-24 bg-card/30 border-y border-white/5">
+      {/* Expertise Grid Section - White Background */}
+      <section id="expertise" className="py-24 bg-white border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Comprehensive Data Expertise
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-slate-600 text-lg">
               End-to-end solutions designed to handle every aspect of your data lifecycle.
             </p>
           </div>
@@ -110,8 +110,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value Props Section */}
-      <section className="py-24">
+      {/* Value Props Section - White Background */}
+      <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -121,25 +121,23 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               {/* Abstract Graphic */}
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-black border border-white/10 p-8 shadow-2xl">
-                 {/* Unsplash abstract tech image */}
-                 <div className="absolute inset-0 mix-blend-overlay opacity-50">
-                   {/* technology data abstract background */}
+              <div className="relative aspect-square rounded-2xl overflow-hidden bg-white border border-slate-200 p-8 shadow-xl">
+                 <div className="absolute inset-0 opacity-10">
                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" alt="Data analytics dashboard" className="w-full h-full object-cover" />
                  </div>
                  <div className="relative z-10 h-full flex flex-col justify-between">
-                   <div className="bg-background/80 backdrop-blur-md p-4 rounded-xl border border-white/10 w-3/4">
+                   <div className="bg-white/90 backdrop-blur-md p-4 rounded-xl border border-slate-200 w-3/4 shadow-sm">
                      <div className="flex gap-2 mb-2">
-                       <div className="w-3 h-3 rounded-full bg-red-500"/>
-                       <div className="w-3 h-3 rounded-full bg-yellow-500"/>
-                       <div className="w-3 h-3 rounded-full bg-green-500"/>
+                       <div className="w-3 h-3 rounded-full bg-red-400"/>
+                       <div className="w-3 h-3 rounded-full bg-yellow-400"/>
+                       <div className="w-3 h-3 rounded-full bg-green-400"/>
                      </div>
-                     <div className="h-2 bg-white/10 rounded w-full mb-2"/>
-                     <div className="h-2 bg-white/10 rounded w-2/3"/>
+                     <div className="h-2 bg-slate-100 rounded w-full mb-2"/>
+                     <div className="h-2 bg-slate-100 rounded w-2/3"/>
                    </div>
-                   <div className="bg-primary/20 backdrop-blur-md p-6 rounded-xl border border-primary/20 self-end w-3/4">
+                   <div className="bg-primary p-6 rounded-xl border border-primary/20 self-end w-3/4 shadow-lg">
                      <div className="text-2xl font-bold text-white mb-1">+145%</div>
-                     <div className="text-sm text-primary-foreground/80">Efficiency Increase</div>
+                     <div className="text-sm text-white/90">Efficiency Increase</div>
                    </div>
                  </div>
               </div>
@@ -151,10 +149,10 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                 Why Choose Pinnacle?
               </h2>
-              <p className="text-muted-foreground text-lg mb-8">
+              <p className="text-slate-600 text-lg mb-8">
                 We don't just provide data; we provide clarity. Our team of expert engineers and analysts works as an extension of your team.
               </p>
               
@@ -165,7 +163,7 @@ export default function Home() {
                   "Real-time analytics and reporting",
                   "Dedicated support and training"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-white">
+                  <li key={i} className="flex items-center gap-3 text-slate-700">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
                     {item}
                   </li>

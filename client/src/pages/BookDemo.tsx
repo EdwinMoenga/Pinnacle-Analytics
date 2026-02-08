@@ -46,22 +46,22 @@ export default function BookDemo() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
                   Ready to transform your business?
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed">
+                <p className="text-xl text-slate-600 leading-relaxed">
                   Book a personalized demo with our solution architects. We'll explore your current data stack and identify high-impact opportunities.
                 </p>
               </motion.div>
 
               <div className="grid sm:grid-cols-2 gap-6 pt-4">
-                <div className="bg-card p-6 rounded-xl border border-white/5">
-                  <h3 className="text-white font-bold mb-2">30-Minute Consultation</h3>
-                  <p className="text-sm text-muted-foreground">Focus on your specific pain points and goals.</p>
+                <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                  <h3 className="text-slate-900 font-bold mb-2">30-Minute Consultation</h3>
+                  <p className="text-sm text-slate-500">Focus on your specific pain points and goals.</p>
                 </div>
-                <div className="bg-card p-6 rounded-xl border border-white/5">
-                  <h3 className="text-white font-bold mb-2">Custom Roadmap</h3>
-                  <p className="text-sm text-muted-foreground">Receive a high-level strategy document after the call.</p>
+                <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                  <h3 className="text-slate-900 font-bold mb-2">Custom Roadmap</h3>
+                  <p className="text-sm text-slate-500">Receive a high-level strategy document after the call.</p>
                 </div>
               </div>
             </div>
@@ -71,15 +71,15 @@ export default function BookDemo() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-card border border-white/10 rounded-2xl p-8 shadow-2xl relative overflow-hidden"
+              className="bg-white border border-slate-200 rounded-2xl p-8 shadow-2xl relative overflow-hidden"
             >
               {isSuccess ? (
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-card z-20 p-8 text-center animate-in fade-in zoom-in">
-                  <div className="w-20 h-20 rounded-full bg-green-500/20 flex items-center justify-center mb-6">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white z-20 p-8 text-center animate-in fade-in zoom-in">
+                  <div className="w-20 h-20 rounded-full bg-green-500/10 flex items-center justify-center mb-6">
                     <CheckCircle className="w-10 h-10 text-green-500" />
                   </div>
-                  <h2 className="text-2xl font-bold text-white mb-2">Request Received!</h2>
-                  <p className="text-muted-foreground">
+                  <h2 className="text-2xl font-bold text-slate-900 mb-2">Request Received!</h2>
+                  <p className="text-slate-600">
                     Thanks for reaching out. One of our specialists will contact you at {form.getValues().email} within 24 hours.
                   </p>
                   <Button 
@@ -92,7 +92,7 @@ export default function BookDemo() {
                 </div>
               ) : null}
 
-              <h2 className="text-2xl font-bold text-white mb-6">Schedule a Call</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">Schedule a Call</h2>
               
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -101,9 +101,9 @@ export default function BookDemo() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-white">Full Name</FormLabel>
+                        <FormLabel className="text-slate-700">Full Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="John Doe" {...field} className="bg-background/50 border-white/10 text-white placeholder:text-muted-foreground focus:border-primary" />
+                          <Input placeholder="John Doe" {...field} className="bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-400 focus:border-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -115,9 +115,9 @@ export default function BookDemo() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-white">Company Email</FormLabel>
+                        <FormLabel className="text-slate-700">Company Email</FormLabel>
                         <FormControl>
-                          <Input placeholder="john@company.com" {...field} className="bg-background/50 border-white/10 text-white placeholder:text-muted-foreground focus:border-primary" />
+                          <Input placeholder="john@company.com" {...field} className="bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-400 focus:border-primary" />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -129,10 +129,10 @@ export default function BookDemo() {
                     name="serviceInterest"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-white">Service Interest</FormLabel>
+                        <FormLabel className="text-slate-700">Service Interest</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger className="bg-background/50 border-white/10 text-white focus:border-primary">
+                            <SelectTrigger className="bg-slate-50 border-slate-200 text-slate-900 focus:border-primary">
                               <SelectValue placeholder="Select a service..." />
                             </SelectTrigger>
                           </FormControl>
@@ -154,11 +154,11 @@ export default function BookDemo() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-white">Additional Details (Optional)</FormLabel>
+                        <FormLabel className="text-slate-700">Additional Details (Optional)</FormLabel>
                         <FormControl>
                           <Textarea 
                             placeholder="Tell us a bit about your project..." 
-                            className="resize-none bg-background/50 border-white/10 text-white placeholder:text-muted-foreground focus:border-primary min-h-[100px]"
+                            className="resize-none bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-400 focus:border-primary min-h-[100px]"
                             {...field} 
                           />
                         </FormControl>

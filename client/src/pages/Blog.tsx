@@ -16,10 +16,10 @@ export default function Blog() {
       <main className="flex-grow pt-32 pb-20">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Insights & Resources
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-slate-600">
               Expert articles on the latest trends in data engineering, analytics strategy, and digital transformation.
             </p>
           </div>

@@ -28,7 +28,7 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-white/5 py-4 shadow-lg"
+          ? "bg-white/80 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm"
           : "bg-transparent py-6"
       )}
     >
@@ -37,7 +37,10 @@ export function Header() {
           <div className="bg-primary/20 p-2 rounded-lg group-hover:bg-primary/30 transition-colors">
             <BarChart3 className="w-6 h-6 text-primary" />
           </div>
-          <span className="text-xl font-heading font-bold tracking-tight text-white">
+          <span className={cn(
+            "text-xl font-heading font-bold tracking-tight transition-colors",
+            isScrolled ? "text-slate-900" : "text-white"
+          )}>
             Pinnacle<span className="text-primary">Analytics</span>
           </span>
         </Link>
@@ -50,7 +53,9 @@ export function Header() {
               href={item.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                location === item.href ? "text-primary" : "text-muted-foreground"
+                isScrolled
+                  ? (location === item.href ? "text-primary" : "text-slate-600")
+                  : (location === item.href ? "text-primary" : "text-slate-200")
               )}
             >
               {item.label}
