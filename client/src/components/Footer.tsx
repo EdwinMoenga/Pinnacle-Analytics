@@ -69,7 +69,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:hello@pinnacle.com">hello@pinnacle.com</a>
+                <a href="mailto:pinnacle.analyticske@gmail.com">pinnacle.analyticske@gmail.com</a>
               </li>
             </ul>
           </div>
