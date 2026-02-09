@@ -44,8 +44,8 @@ export function Footer() {
                 "Quality Management"
               ].map((item) => (
                 <li key={item}>
-                  <Link href="/#expertise" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group">
-                    <ArrowRight className="w-4 h-4 text-primary/50 group-hover:translate-x-1 transition-transform" />
+                  <Link href="/#expertise" className="flex items-center gap-2 text-slate-300 hover:text-primary transition-colors group">
+                    <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
                     {item}
                   </Link>
                 </li>
@@ -57,17 +57,17 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold text-white mb-6">Contact Us</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-muted-foreground">
+              <li className="flex items-start gap-3 text-slate-300">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
                 <span>
                   Kisii - Kenya
                 </span>
               </li>
-              <li className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
+              <li className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a href="tel:+254717738019">+254 717 738019</a>
               </li>
-              <li className="flex items-center gap-3 text-muted-foreground hover:text-white transition-colors">
+              <li className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a href="mailto:pinnacle.analyticske@gmail.com">pinnacle.analyticske@gmail.com</a>
               </li>
