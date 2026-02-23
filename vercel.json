@@ -3,6 +3,11 @@
   "buildCommand": "npm run build:client",
   "outputDirectory": "dist/public",
   "framework": "vite",
+  "functions": {
+    "api/**/*.ts": {
+      "includeFiles": "{server,shared}/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
